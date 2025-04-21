@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Información sobre Gatos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fefefe;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #ff9900;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .contenido {
+            max-width: 800px;
+            margin: auto;
+        }
+        .gato-img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🐾 Todo sobre los Gatos 🐾</h1>
+</header>
+
+<div class="contenido">
+    <img class="gato-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Rsfl6dIGPbojoNrUPdja0WjgGk8ESACRZg&s" alt="Gato bonito">
+
+    <?php
+
+        echo "<h2>Características principales</h2><ul>";
+                "Nombre científico" => "Felis catus",
+                "Esperanza de vida" => "12 - 18 años (doméstico)",
+                "Dieta" => "Carnívora",
+                "Comportamiento" => "Independiente, juguetón, cazador",
+                "Dato curioso" => "Los gatos pueden girar sus orejas 180 grados."
+        echo "</ul>";
+    ?>
+
+    <h2>¿Por qué tener un gato como mascota?</h2>
+    <p>Los gatos son excelentes compañeros. Son limpios, afectuosos y muy entretenidos. Además, se adaptan bien a espacios pequeños, lo que los hace ideales para departamentos.</p>
+</div>
+
+<footer>
+    <p>© <?php echo date("Y"); ?> InformaciónFelina.com - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
